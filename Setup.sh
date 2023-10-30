@@ -70,14 +70,23 @@ echo "Download complete."
 
 # Downloading Impackets
 echo "Downloading impacket..."
-for file in $(cat impacket/impacketv0.10.0.txt); do 
+for file in $(cat impacket/impacketvLatest.txt); do 
   wget -P impacket ${file} > /dev/null 2>&1; 
 done
 echo "Download complete."
 echo "Unzipping downloaded folder..."
-tar -xf impacket/impacket-0.10.0.tar.gz -C impacket > /dev/null 2>&1
+tar -xf impacket/impacket-*.tar.gz -C impacket > /dev/null 2>&1
 echo "Unzip complete. Further action will be required for impacket."
 
+# Downloading Impackets 9.19
+echo "Downloading impacket..."
+for file in $(cat impacket/impacketv9.19.txt); do 
+  wget -P impacket ${file} > /dev/null 2>&1; 
+done
+echo "Download complete."
+echo "Unzipping downloaded folder..."
+tar -xf impacket/impacket-0.9.19.tar.gz -C impacket > /dev/null 2>&1
+echo "Unzip complete. Further action will be required for impacket."
 
 # Downloading Certipy from github
 echo "Downloading Certipy..."
