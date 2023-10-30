@@ -1,0 +1,1 @@
+https://github.com/fortra/impacket/releases/download/impacket_0_9_19/impacket-0.9.19.tar.gz
