@@ -1,1 +1,0 @@
-https://github.com/fortra/impacket/releases/download/impacket_0_10_0/impacket-0.10.0.tar.gz
