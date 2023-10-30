@@ -75,8 +75,8 @@ for file in $(cat impacket/impacketvLatest.txt); do
 done
 echo "Download complete."
 echo "Unzipping downloaded folder..."
-tar -xf impacket/impacket-*.tar.gz -C impacket > /dev/null 2>&1
-echo "Unzip complete. Further action will be required for impacket."
+tar -xf impacket/impacket-*.tar.gz -C impacket-latest > /dev/null 2>&1
+echo "Unzip complete. Further action will be required for the latest impacket."
 
 # Downloading Impackets 9.19
 echo "Downloading impacket..."
@@ -85,8 +85,8 @@ for file in $(cat impacket/impacketv9.19.txt); do
 done
 echo "Download complete."
 echo "Unzipping downloaded folder..."
-tar -xf impacket/impacket-0.9.19.tar.gz -C impacket > /dev/null 2>&1
-echo "Unzip complete. Further action will be required for impacket."
+tar -xf impacket/impacket-0.9.19.tar.gz -C impacket-9.19 > /dev/null 2>&1
+echo "Unzip complete. Further action will be required for impacket 9.19."
 
 # Downloading Certipy from github
 echo "Downloading Certipy..."
@@ -131,6 +131,16 @@ for file in $(cat ActiveDirectory/URLinks/mitm6.txt); do
   git clone ${file} ActiveDirectory/mitm6 > /dev/null 2>&1; 
 done
 echo "Download complete."
+
+# Downloading Sublist3r
+echo "Downloading Sublist3r..."
+for file in $(cat web/sublist3rv1.1.txt); do 
+  wget -P web ${file} > /dev/null 2>&1; 
+done
+echo "Download complete."
+echo "Unzipping downloaded folder..."
+tar -xf impacket/1.1.tar.gz -C Sublist3r > /dev/null 2>&1
+echo "Unzip complete."
 
 ###################
 # Sublime Install #
