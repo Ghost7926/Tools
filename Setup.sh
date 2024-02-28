@@ -148,7 +148,7 @@ echo "Unzip complete."
 ###############
 
 if [ -f "/usr/share/wordlists/rockyou.txt.gz" ]; then
-  gunzip "/usr/share/wordlists/rockyou.txt.gz" -C /usr/share/wordlists/
+  gunzip "/usr/share/wordlists/rockyou.txt.gz"
   echo "rockyou.txt extracted successfully."
 else
     echo "rockyou.txt is already unzipped. Good job."
