@@ -38,7 +38,7 @@ echo "Succcess"
 # Installing the apt install Tools #
 ####################################
 
-applications=("seclists" "bloodhound" "gobuster" "gedit" "eyewitness" "golang-go") 
+applications=("seclists" "bloodhound" "gobuster" "gedit" "eyewitness" "golang-go" "htop") 
 
 for app in "${applications[@]}"; do
   echo "Installing $app..."
