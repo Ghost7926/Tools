@@ -38,7 +38,7 @@ echo "Succcess"
 # Installing the apt install Tools #
 ####################################
 
-applications=("seclists" "bloodhound" "gobuster" "gedit" "eyewitness") 
+applications=("seclists" "bloodhound" "gobuster" "gedit" "eyewitness" "golang-go") 
 
 for app in "${applications[@]}"; do
   echo "Installing $app..."
@@ -142,23 +142,13 @@ echo "Unzipping downloaded folder..."
 tar -xf impacket/1.1.tar.gz -C Sublist3r > /dev/null 2>&1
 echo "Unzip complete."
 
-###################
-# Sublime Install #
-###################
-echo "Installing Sublime..."
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add - > /dev/null 2>&1;
-sudo apt-get install apt-transport-https > /dev/null 2>&1;
-echo "deb https://download.sublimetext.com/ apt/stable/" | tee /etc/apt/sources.list.d/sublime-text.list > /dev/null 2>&1;
-apt-get update > /dev/null 2>&1;
-apt-get install sublime-text > /dev/null 2>&1;
-echo "Download complete."
 
 ###############
 # Rockyou.txt #
 ###############
 
-if [ -f "/usr/share/wordlists/rockyou.txt.tar.gz" ]; then
-  tar -xf "/usr/share/wordlists/rockyou.txt.tar.gz" -C /usr/share/wordlists/
+if [ -f "/usr/share/wordlists/rockyou.txt.gz" ]; then
+  gunzip "/usr/share/wordlists/rockyou.txt.gz" -C /usr/share/wordlists/
   echo "rockyou.txt extracted successfully."
 else
     echo "rockyou.txt is already unzipped. Good job."
