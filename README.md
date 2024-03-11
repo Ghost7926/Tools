@@ -23,6 +23,4 @@ linpeas.sh: https://github.com/carlospolop/PEASS-ng/
 
 phpreverseshell: https://github.com/pentestmonkey/php-reverse-shell
 
-JWT_Tool: https://github.com/ticarpi/jwt_tool
-
 Sublime: https://www.sublimetext.com/
