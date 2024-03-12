@@ -86,12 +86,17 @@ echo "Unzip complete."
 
 # Unzip mimikatz
 echo "Unzipping mimikatz..."
-malware/mimikatz-master.zip > /dev/null 2>&1
+Malware/mimikatz-master.zip > /dev/null 2>&1
 echo "Unzip complete."
 
 # Unzip SharpHound
 echo "Unzipping SharpHound..."
 unzip ActiveDirecroty/SharpHound-v1.1.1/SharpHound-v1.1.1.zip > /dev/null 2>&1
+echo "Unzip complete."
+
+# Unzipping ligolo-ng
+echo "Unzipping ligolo-ng..."
+tar -xf Pivoting/ligolo-ng-0.5.1.tar.gz -C ligolo-ng-0.5.1 > /dev/null 2>&1
 echo "Unzip complete."
 
 ###############
