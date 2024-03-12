@@ -111,13 +111,6 @@ mv ActiveDirectory/kerbrute_linux_amd64 ActiveDirectory/kerbrute
 chmod 744 ActiveDirectory/kerbrute
 echo "Download complete."
 
-# Download PowerSploit
-echo "Downloading PowerSploit..."
-for file in $(cat ActiveDirectory/URLinks/PowerSploit.txt); do 
-  git clone ${file} ActiveDirectory/PowerSploit > /dev/null 2>&1; 
-done
-echo "Download complete."
-
 # Download mitm6
 echo "Downloading mitm6..."
 for file in $(cat ActiveDirectory/URLinks/mitm6.txt); do 
