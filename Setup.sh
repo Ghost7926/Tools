@@ -50,17 +50,6 @@ done
 # Downloads from internet #
 ###########################
 
-# Download sharphound from github
-echo "Downloading SharpHound..."
-mkdir ActiveDirectory/SharpHound
-for file in $(cat ActiveDirectory/URLinks/SharpHoundv1.1.1.txt); do 
-  wget -P ActiveDirectory/SharpHound ${file} > /dev/null 2>&1; 
-done
-echo "Download complete."
-echo "Unzipping downloaded folder..."
-unzip ActiveDirectory/SharpHound/SharpHound-v1.1.1.zip -d ActiveDirectory/SharpHound > /dev/null 2>&1
-echo "Unzip complete."
-
 # Downloading Impackets
 echo "Downloading impacket..."
 for file in $(cat impacket/impacketvLatest.txt); do 
@@ -93,22 +82,6 @@ echo "Downloading LdapRelayScan..."
 for file in $(cat ActiveDirectory/URLinks/LdapRelayScan.txt); do 
   git clone ${file} ActiveDirectory/LdapRelayScan > /dev/null 2>&1; 
 done
-echo "Download complete."
-
-# Download PetitPotam
-echo "Downloading PetitPotam..."
-for file in $(cat ActiveDirectory/URLinks/PetitPotam.txt); do 
-  git clone ${file} ActiveDirectory/PetitPotam > /dev/null 2>&1; 
-done
-echo "Download complete."
-
-# Download Kerbrute
-echo "Downloading Kerbrute..." 
-for file in $(cat ActiveDirectory/URLinks/kerbrute.txt); do 
-  wget -P ActiveDirectory ${file} > /dev/null 2>&1;
-done
-mv ActiveDirectory/kerbrute_linux_amd64 ActiveDirectory/kerbrute
-chmod 744 ActiveDirectory/kerbrute
 echo "Download complete."
 
 # Download mitm6
