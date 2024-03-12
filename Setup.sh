@@ -61,13 +61,6 @@ echo "Unzipping downloaded folder..."
 unzip ActiveDirectory/SharpHound/SharpHound-v1.1.1.zip -d ActiveDirectory/SharpHound > /dev/null 2>&1
 echo "Unzip complete."
 
-# Downloading PowerView
-echo "Downloading PowerView..."
-for file in $(cat ActiveDirectory/URLinks/PowerView.txt); do 
-  wget -P ActiveDirectory/PowerView ${file} > /dev/null 2>&1;
-done
-echo "Download complete."
-
 # Downloading Impackets
 echo "Downloading impacket..."
 for file in $(cat impacket/impacketvLatest.txt); do 
