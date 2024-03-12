@@ -80,13 +80,8 @@ done
 echo "Download complete."
 
 # Downloading Sublist3r
-echo "Downloading Sublist3r..."
-for file in $(cat web/sublist3rv1.1.txt); do 
-  wget -P web ${file} > /dev/null 2>&1; 
-done
-echo "Download complete."
-echo "Unzipping downloaded folder..."
-tar -xf impacket/1.1.tar.gz -C Sublist3r > /dev/null 2>&1
+echo "Unzipping Sublist3r..."
+tar -xf web/Sublist3r-1.1.tar.gz -C Sublist3r > /dev/null 2>&1
 echo "Unzip complete."
 
 
