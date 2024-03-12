@@ -99,6 +99,9 @@ echo "Unzipping ligolo-ng..."
 tar -xf Pivoting/ligolo-ng-0.5.1.tar.gz -C ligolo-ng-0.5.1 > /dev/null 2>&1
 echo "Unzip complete."
 
+# Chmod Kerbrute
+chmod 777 ActiveDirectory/Kerbrute
+
 ###############
 # Rockyou.txt #
 ###############
