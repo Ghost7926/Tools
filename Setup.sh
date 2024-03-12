@@ -86,7 +86,12 @@ echo "Unzip complete."
 
 # Unzip mimikatz
 echo "Unzipping mimikatz..."
-tar -xf malware/mimikatz-master.zip -C mimikatz > /dev/null 2>&1
+malware/mimikatz-master.zip > /dev/null 2>&1
+echo "Unzip complete."
+
+# Unzip SharpHound
+echo "Unzipping SharpHound..."
+unzip ActiveDirecroty/SharpHound-v1.1.1/SharpHound-v1.1.1.zip > /dev/null 2>&1
 echo "Unzip complete."
 
 ###############
