@@ -84,13 +84,6 @@ for file in $(cat ActiveDirectory/URLinks/LdapRelayScan.txt); do
 done
 echo "Download complete."
 
-# Download mitm6
-echo "Downloading mitm6..."
-for file in $(cat ActiveDirectory/URLinks/mitm6.txt); do 
-  git clone ${file} ActiveDirectory/mitm6 > /dev/null 2>&1; 
-done
-echo "Download complete."
-
 # Downloading Sublist3r
 echo "Downloading Sublist3r..."
 for file in $(cat web/sublist3rv1.1.txt); do 
