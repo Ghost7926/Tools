@@ -84,6 +84,10 @@ echo "Unzipping Sublist3r..."
 tar -xf web/Sublist3r-1.1.tar.gz -C Sublist3r > /dev/null 2>&1
 echo "Unzip complete."
 
+# Unzip mimikatz
+echo "Unzipping mimikatz..."
+tar -xf malware/mimikatz-master.zip -C mimikatz > /dev/null 2>&1
+echo "Unzip complete."
 
 ###############
 # Rockyou.txt #
